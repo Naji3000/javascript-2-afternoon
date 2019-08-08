@@ -120,19 +120,25 @@ user2.email = 'bryan.smith@devmounta.in'
 var methodCollection = {
   
 }
+
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
 //Code Here
-
+methodCollection.alertHello = function(){
+  alert('hello');
+}
+methodCollection.logHello = function(){
+  console.log('hello');
+}
 /*
   Now call your alertHello and logHello methods.
 */
-
+methodCollection.alertHello();
 //Code Here
-
+methodCollection.logHello();
 ////////// PROBLEM 6 //////////
 
 /*
@@ -141,7 +147,13 @@ var methodCollection = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn){
+  return {
+    name,
+    birthday,
+    ssn
+  }
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -150,3 +162,12 @@ var methodCollection = {
 */
 
 //Code Here
+
+// function makeCard(cardNumber, expirationDate, securityCode){
+//   return {
+//   cardNumber,
+//   expirationDate,
+//   securityCode
+//   }
+// }
+
